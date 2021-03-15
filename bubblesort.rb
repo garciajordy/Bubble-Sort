@@ -1,3 +1,3 @@
 def bubblesort(arr)
-    arr
+  arr
 end
