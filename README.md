@@ -13,10 +13,6 @@ In an unsorted array of 5 elements, start with the first two elements and sort t
 - Compare the fourth and fifth element to check which one is greater, and sort them in ascending order.
 - Repeat steps 1–5 until no more swaps are required.
 
-Simple right? Below is a simple animated illustration:
-
-![screenshot](./imgs/illustration.gif)
-
 ## Built With
 
 - Ruby
