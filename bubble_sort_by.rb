@@ -10,8 +10,8 @@ def bubble_sort(array)
       x = array.index(n)
       next unless array[x + 1]
 
-      array[x], array[x + 1] = array[x + 1], array[x] if n > array[x + 1]
+      array[x], array[x + 1] = array[x + 1], array[x] if yield(array[x], array[x + 1]).positive?
     end
   end
 end
-p bubble_sort([4, 3, 78, 2, 0, 2])
+bubble_sort_by(%w[hi hello hey hhee holapol]) { |left, right| left.length - right.length }
