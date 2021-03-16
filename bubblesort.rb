@@ -13,5 +13,6 @@ def bubble_sort(array)
       array[x], array[x + 1] = array[x + 1], array[x] if n > array[x + 1]
     end
   end
+  array
 end
 p bubble_sort([4, 3, 78, 2, 0, 2])

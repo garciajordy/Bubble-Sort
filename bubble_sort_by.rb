@@ -1,4 +1,4 @@
-def bubble_sort(array)
+def bubble_sort_by(array)
   return array if array.length <= 1
 
   sum = array.length - 1
@@ -13,5 +13,6 @@ def bubble_sort(array)
       array[x], array[x + 1] = array[x + 1], array[x] if yield(array[x], array[x + 1]).positive?
     end
   end
+  array
 end
 bubble_sort_by(%w[hi hello hey hhee holapol]) { |left, right| left.length - right.length }
